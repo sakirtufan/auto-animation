@@ -1,0 +1,55 @@
+body{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+}
+.weg{
+   position: absolute;
+   height: 500px;
+   width: 889px;
+   background: url(images/arka.jpg);
+   background-size: cover;
+   animation-name: weg ;
+   animation-direction: reverse;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+
+.auto{
+   width: 420px;
+   height: 150px;
+   background: url(images/arac.png);
+   position: absolute;
+   top: 245px;
+   left: 100px;
+}
+
+.rad{
+   position: absolute;
+   width: 64px;
+   height: 64px;
+   background: url(images/teker.png);
+   top: 84px;   
+   animation-name: rad ;
+   animation-direction: normal;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+.rad:nth-child(1){
+   left: 42px;
+}
+.rad:nth-child(2){
+   left: 310px;
+}
+@keyframes rad{
+   from{}
+   to{ transform: rotate(360deg);}
+}
+
+@keyframes weg{
+   from{}
+   to{background-position: 889px 0;}
+}
